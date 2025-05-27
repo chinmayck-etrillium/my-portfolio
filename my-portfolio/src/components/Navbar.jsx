@@ -8,9 +8,9 @@ const Navbar = () => {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Services", path: "/#services" },
+    { name: "Services", path: "/services" },
     { name: "Blog", path: "/blog" },
-    { name: "Contact", path: "/#contact" },
+  
   ];
 
   return (
@@ -21,7 +21,7 @@ const Navbar = () => {
             to="/"
             className="text-xl font-semibold text-indigo-600 tracking-tight"
           >
-            YourName<span className="text-gray-800">.wealth</span>
+            thewealthmanager<span className="text-gray-800">.in</span>
           </Link>
 
           {/* Desktop Menu */}
