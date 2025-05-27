@@ -33,7 +33,7 @@ const Home = () => {
         <div className="flex-1 max-w-md mx-auto">
           {/* Placeholder for image or illustration */}
           <img
-            src="https://geplcapital.com/knowledge-center/61b70ccdc5a0b.1639386317.What-is-wealth-management_60780de045c04.jpg"
+            src="/images/hero-image.png"
             alt="Wealth Management Illustration"
             className="rounded-lg shadow-lg object-cover w-full h-auto"
           />
