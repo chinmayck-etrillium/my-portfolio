@@ -1,4 +1,3 @@
-// src/pages/Blog.jsx
 import { Link } from "react-router-dom";
 
 const blogs = [
@@ -23,24 +22,24 @@ const blogs = [
 export default function Blog() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-12 min-h-screen">
-      <h1 className="text-3xl font-bold text-indigo-600 mb-6">Blog</h1>
-      <div className="space-y-8">
-        {blogs.map((blog) => (
-          <div key={blog.id} className="border-b pb-6">
-            <h2 className="text-xl font-semibold text-gray-800">
-              {blog.title}
-            </h2>
-            <p className="text-sm text-gray-500 mb-2">{blog.date}</p>
-            <p className="text-gray-700 mb-2">{blog.excerpt}</p>
-            <Link
-              to={`/blog/${blog.slug}`}
-              className="text-indigo-600 hover:underline font-medium"
-            >
-              Read more →
-            </Link>
-          </div>
-        ))}
+  <h1 className="text-4xl font-bold text-indigo-600 mb-10">Blog</h1>
+
+  <div className="space-y-10">
+    {blogs.map((blog) => (
+      <div key={blog.id} className="border-b border-gray-300 pb-6">
+        <h2 className="text-2xl font-semibold text-gray-900">{blog.title}</h2>
+        <p className="text-sm text-gray-500 mt-1">{blog.date}</p>
+        <p className="text-base text-gray-700 mt-2">{blog.excerpt}</p>
+        <Link
+          to={`/blog/${blog.slug}`}
+          className="text-indigo-600 hover:text-indigo-800 font-semibold inline-block mt-2"
+        >
+          Read more →
+        </Link>
       </div>
-    </div>
+    ))}
+  </div>
+</div>
+
   );
 }
