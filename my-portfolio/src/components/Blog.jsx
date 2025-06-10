@@ -1,4 +1,4 @@
-// src/pages/Blog.jsx
+
 import { Link } from "react-router-dom";
 
 const blogs = [

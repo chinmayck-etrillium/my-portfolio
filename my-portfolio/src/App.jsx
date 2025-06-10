@@ -3,10 +3,9 @@ import Layout from "./components/Layout/Layout";
 import Home from "./components/Home";
 import About from "./components/About";
 import Services from "./components/Services";
-import Blog from "./components/Blog";
-import DataDrivenWealth from "./components/blog/data-driven-wealth";
-import UnderstandingSIFs from "./components/blog/understanding-sifs";
+import Blog from "./components/Pages/Blog";
 import Contact from "./components/Contact";
+import BlogPost from "./components/BlogPost";
 
 function App() {
   return (
@@ -16,15 +15,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
-          <Route path="blog" element={<Blog />} />
-          <Route
-            path="blog/data-driven-wealth"
-            element={<DataDrivenWealth />}
-          />
-          <Route
-            path="blog/understanding-sifs"
-            element={<UnderstandingSIFs />}
-          />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
