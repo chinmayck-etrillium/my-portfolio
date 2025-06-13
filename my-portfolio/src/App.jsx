@@ -6,7 +6,7 @@ import Services from "./components/Services";
 import Blog from "./components/Pages/Blog";
 import Contact from "./components/Contact";
 import BlogPost from "./components/BlogPost";
-import SIPCalculator from "./components/SipCalculator";
+import SIPCalculator from "./components/SIPCalculator.jsx";
 
 function App() {
   return (
