@@ -6,6 +6,7 @@ import Services from "./components/Services";
 import Blog from "./components/Pages/Blog";
 import Contact from "./components/Contact";
 import BlogPost from "./components/BlogPost";
+import SIPCalculator from "./components/SipCalculator";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="sip" element={<SIPCalculator />} />
         </Route>
       </Routes>
     </Router>
