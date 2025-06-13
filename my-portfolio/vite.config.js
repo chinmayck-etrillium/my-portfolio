@@ -7,4 +7,5 @@ import typography from '@tailwindcss/typography'
 export default defineConfig({
   plugins: [react(), tailwindcss(), typography],
   assetsInclude: ["**/*.md"],
+  base: '/',
 });
