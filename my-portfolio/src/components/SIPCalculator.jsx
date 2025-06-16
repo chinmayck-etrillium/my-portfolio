@@ -45,7 +45,7 @@ const SIPCalculator = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto py-12 px-4">
+    <div className="min-h-screen max-w-4xl mx-auto py-12 px-4">
       <h2 className="text-3xl font-bold text-indigo-700 mb-6">
         SIP Calculator
       </h2>
