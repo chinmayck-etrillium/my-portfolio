@@ -31,9 +31,8 @@ const Home = () => {
         </div>
 
         <div className="flex-1 max-w-md mx-auto">
-          {/* Placeholder for image or illustration */}
           <img
-            src="/images/hero-image.png"
+            src="/images/hero-image.webp"
             alt="Wealth Management Illustration"
             className="rounded-lg shadow-lg object-cover w-full h-auto"
           />
